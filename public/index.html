@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-------------- nav bar Static content ------------->
+    <div class="nav-holder">
+    </div>
+    <div class="rules" id="drop-dow-div"> 
+      <h3> HOW TO PLAY </h3>
+      <hr size= "1" color= "#996633">
+      <br>
+        <ul>
+          <li>
+            All 4 players must be logged in to start the game.
+          </li>
+          <li> 
+            Press "NEW GAME" button to start the game.
+          </li>
+          <li>
+            The goal is to recreate the reference image shown to you on the screen on your canvas.
+          </li>
+          <li>
+            Each player can only paint with their chosen color.
+          </li>
+          <li>
+            You have 2 minutes to recreate paint the reference image displayed as accurate as possible.
+          </li>
+          <li>
+            The game ends when the time has run out <u>OR</u> when all players have pressed the "FINISHED" button
+          </li>
+          <li>
+            Your goal is to get as a high accuracy percentage as possible.
+          </li>
+        </ul>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="time-board"></div>
+      <div class="score-board"></div>
+      <div class="game-board"></div>
+      <div class="login-board"></div>
+      <div class="dash-board"></div>
+      <div class="image-board"></div>
+    </div> 
+
+    <!------ gives acces to querystring  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+      >
+    </script>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script defer type="module" src="javascripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@import 'login';
+@import 'gridPage';
+@import 'chat';
+@import 'nav';
+@import 'rules';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: rgb(128, 128, 128);
+  margin: 20px;
+}
+
+// ----- main-wrapper ------- //
+.main-wrapper {
+  width: 90vw;
+  height: 90vh;
+  display: grid;
+
+  grid-template-columns: 300px 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.time-board {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#finish {
+  font-size: 18;
+  font-family: 'Pattaya', sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+//chat send button
+.btn {
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn:hover {
+  background-color: #ff6048;
+}
+.game-board {
+  display: flex;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.dash-board {
+  display: flex;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.image-board {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.login-board {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+@media all and (max-width: 1000px) {
+  .main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+  }
+}

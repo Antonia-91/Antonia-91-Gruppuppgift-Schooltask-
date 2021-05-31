@@ -1,0 +1,25 @@
+.rules {
+  width: 300px;
+  height: auto;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+  padding: 10px;
+  line-height: 20px;
+
+  background-color: #333;
+
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  transform: translateY(-500%);
+  transition: 0.5s ease-in;
+
+  box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.active {
+  transform: translateY(0%);
+  transition: 0.5s ease-in;
+}

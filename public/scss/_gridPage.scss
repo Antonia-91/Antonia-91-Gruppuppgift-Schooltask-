@@ -1,0 +1,19 @@
+#gridPainterCanvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  div {
+    border: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
